@@ -1,0 +1,22 @@
+
+struct node *HEAD;
+struct node *ONE = NULL;
+struct node *TWO = NULL;
+struct node *THREE = NULL;
+
+
+ONE = malloc(sizeof(struct node));
+TWO = malloc(sizeof(struct node));
+THREE = malloc(sizeof(struct node));
+
+
+ONE->data = 23;
+TWO->data = 34;
+THREE->data = 90;
+
+
+ONE->next = TWO;
+TWO->next = THREE;
+THREE->next = NULL;
+
+HEAD = ONE;
